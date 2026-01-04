@@ -8,7 +8,6 @@ export default function TemplatesSection() {
     <section className="py-20 md:py-28 bg-slate-50 dark:bg-slate-900">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
               Plantillas profesionales
@@ -18,15 +17,12 @@ export default function TemplatesSection() {
             </p>
           </div>
 
-          {/* Current Template - Harvard */}
           <div className="mb-12">
             <Card className="border-2 border-blue-200 dark:border-blue-800 shadow-xl overflow-hidden">
               <CardContent className="p-0">
                 <div className="grid md:grid-cols-2 gap-0">
-                  {/* Preview Side */}
                   <div className="bg-linear-to-br from-blue-50 to-white dark:from-blue-950/30 dark:to-slate-800 p-8 md:p-12 flex items-center justify-center">
                     <div className="bg-white dark:bg-slate-900 rounded-lg shadow-2xl p-8 w-full max-w-sm border-4 border-slate-200 dark:border-slate-700">
-                      {/* Mini CV Preview */}
                       <div className="space-y-4">
                         <div className="text-center border-b-2 border-slate-200 dark:border-slate-700 pb-4">
                           <div className="h-3 bg-slate-900 dark:bg-slate-100 rounded w-1/2 mx-auto mb-2"></div>
@@ -45,7 +41,6 @@ export default function TemplatesSection() {
                     </div>
                   </div>
 
-                  {/* Info Side */}
                   <div className="p-8 md:p-12 bg-white dark:bg-slate-800">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="p-3 bg-blue-100 dark:bg-blue-950 rounded-lg">
@@ -67,7 +62,6 @@ export default function TemplatesSection() {
                       Diseño limpio, estructura clara y enfoque en tus logros y experiencia.
                     </p>
 
-                    {/* Features List */}
                     <ul className="space-y-3 mb-8">
                       {[
                         'Estructura profesional y reconocida internacionalmente',
@@ -94,7 +88,6 @@ export default function TemplatesSection() {
             </Card>
           </div>
 
-          {/* Coming Soon Section */}
           <div className="text-center">
             <div className="inline-block bg-linear-to-r from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 rounded-2xl p-8 border-2 border-purple-200 dark:border-purple-800">
               <div className="flex items-center justify-center gap-2 mb-4">

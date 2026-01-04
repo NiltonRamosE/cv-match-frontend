@@ -6,7 +6,6 @@ export default function ProblemSolutionSection() {
     <section className="py-20 md:py-28 bg-white dark:bg-slate-950">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
               El problema que todos enfrentamos
@@ -16,9 +15,7 @@ export default function ProblemSolutionSection() {
             </p>
           </div>
 
-          {/* Problem + Solution Grid */}
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-            {/* Problem Card */}
             <div className="bg-red-50 dark:bg-red-950/20 rounded-2xl p-8 border-2 border-red-200 dark:border-red-900">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-red-100 dark:bg-red-900/50 rounded-lg">
@@ -44,7 +41,6 @@ export default function ProblemSolutionSection() {
               </ul>
             </div>
 
-            {/* Solution Card */}
             <div className="bg-green-50 dark:bg-green-950/20 rounded-2xl p-8 border-2 border-green-200 dark:border-green-900">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-green-100 dark:bg-green-900/50 rounded-lg">
@@ -71,7 +67,6 @@ export default function ProblemSolutionSection() {
             </div>
           </div>
 
-          {/* Bottom Message */}
           <div className="mt-12 text-center">
             <div className="inline-flex items-center gap-2 px-6 py-3 bg-blue-50 dark:bg-blue-950/30 rounded-full border border-blue-200 dark:border-blue-800">
               <TrendingUp className="w-5 h-5 text-blue-600 dark:text-blue-400" />

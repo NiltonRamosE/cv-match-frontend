@@ -3,7 +3,6 @@ import { Clock, Target, Shield, Copy } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
-// Definir tipos para TypeScript
 type ColorKey = 'blue' | 'green' | 'purple' | 'orange';
 
 interface Benefit {
@@ -45,7 +44,6 @@ const benefits: Benefit[] = [
   }
 ];
 
-// Tipar explícitamente el objeto colorClasses
 const colorClasses: Record<ColorKey, string> = {
   blue: 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/30',
   green: 'text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-950/30',
@@ -58,7 +56,6 @@ export default function BenefitsSection() {
     <section className="py-20 md:py-28 bg-white dark:bg-slate-950">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
               Beneficios que marcan la diferencia
@@ -68,11 +65,10 @@ export default function BenefitsSection() {
             </p>
           </div>
 
-          {/* Benefits Grid */}
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             {benefits.map((benefit, idx) => {
               const Icon = benefit.icon;
-              const colorClass = colorClasses[benefit.color]; // ✅ Ahora es seguro
+              const colorClass = colorClasses[benefit.color];
               
               return (
                 <Card 
@@ -80,7 +76,6 @@ export default function BenefitsSection() {
                   className="border-2 hover:border-slate-300 dark:hover:border-slate-600 transition-all hover:shadow-lg group hover:scale-[1.02] duration-300"
                 >
                   <CardContent className="p-8">
-                    {/* Icon and Stat */}
                     <div className="flex items-start justify-between mb-4">
                       <div className={`p-4 rounded-xl ${colorClass} group-hover:scale-105 transition-transform duration-300`}>
                         <Icon className="w-8 h-8" />
@@ -90,12 +85,10 @@ export default function BenefitsSection() {
                       </span>
                     </div>
 
-                    {/* Title */}
                     <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                       {benefit.title}
                     </h3>
 
-                    {/* Description */}
                     <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
                       {benefit.description}
                     </p>
@@ -105,7 +98,6 @@ export default function BenefitsSection() {
             })}
           </div>
 
-          {/* Bottom CTA */}
           <div className="mt-16 text-center bg-linear-to-r from-blue-50 to-purple-50 dark:from-blue-950/30 dark:to-purple-950/30 rounded-2xl p-8 border border-blue-200 dark:border-blue-800">
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">
               Optimiza tu búsqueda de empleo hoy mismo

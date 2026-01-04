@@ -35,9 +35,7 @@ export function Footer() {
   return (
     <footer className="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
       <div className="container mx-auto px-4 py-12 md:py-16">
-        {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-12 mb-12">
-          {/* Brand Column */}
           <div className="lg:col-span-2">
             <a href="/" className="flex items-center gap-2 mb-4 group">
               <div className="p-2 bg-blue-600 rounded-lg group-hover:bg-blue-700 transition-colors">
@@ -52,7 +50,6 @@ export function Footer() {
               Un perfil, múltiples versiones, infinitas oportunidades.
             </p>
             
-            {/* Social Links */}
             <div className="flex items-center gap-3">
               {socialLinks.map((social) => {
                 const Icon = social.icon;
@@ -70,7 +67,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Links Columns */}
           <div>
             <h3 className="font-bold text-slate-900 dark:text-white mb-4">
               Producto
@@ -126,7 +122,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-200 dark:border-slate-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-slate-600 dark:text-slate-400 text-center md:text-left">

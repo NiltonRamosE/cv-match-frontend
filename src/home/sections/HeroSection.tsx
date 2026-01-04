@@ -7,7 +7,6 @@ export default function HeroSection() {
     <section className="relative overflow-hidden bg-linear-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950">
       <div className="container mx-auto px-4 py-20 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 mb-8">
             <FileText className="w-4 h-4 text-blue-600 dark:text-blue-400" />
             <span className="text-sm font-medium text-blue-700 dark:text-blue-300">
@@ -15,19 +14,16 @@ export default function HeroSection() {
             </span>
           </div>
 
-          {/* Headline */}
           <h1 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
             Un CV diferente para{' '}
             <span className="text-blue-600 dark:text-blue-400">cada oportunidad</span>
           </h1>
 
-          {/* Subheadline */}
           <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
             Guarda tu información profesional una vez y crea versiones personalizadas de tu currículum 
             para cada empresa o puesto al que postules. Sin duplicar datos, sin perder tiempo.
           </p>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
@@ -46,12 +42,10 @@ export default function HeroSection() {
             </Button>
           </div>
 
-          {/* Visual Element */}
           <div className="mt-16 relative">
             <div className="absolute inset-0 bg-linear-to-t from-white dark:from-slate-950 to-transparent z-10 h-32 bottom-0"></div>
             <div className="bg-slate-100 dark:bg-slate-800 rounded-2xl shadow-2xl p-8 border border-slate-200 dark:border-slate-700">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {/* CV Preview Cards */}
                 {['Desarrollador Frontend', 'UX/UI Designer', 'Product Manager'].map((title, idx) => (
                   <div 
                     key={idx}

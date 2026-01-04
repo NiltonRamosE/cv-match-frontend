@@ -8,7 +8,6 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Detectar scroll para agregar efecto de sombra
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -34,7 +33,6 @@ export function Navbar() {
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
           <a href="/" className="flex items-center gap-2 group">
             <div className="p-2 bg-blue-600 rounded-lg group-hover:bg-blue-700 transition-colors">
               <FileText className="w-5 h-5 md:w-6 md:h-6 text-white" />
@@ -44,7 +42,6 @@ export function Navbar() {
             </span>
           </a>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <a
@@ -64,7 +61,6 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* Desktop Actions */}
           <div className="hidden lg:flex items-center gap-3">
             <ModeToggle />
             <Button 
@@ -80,7 +76,6 @@ export function Navbar() {
             </Button>
           </div>
 
-          {/* Mobile Actions */}
           <div className="flex lg:hidden items-center gap-2">
             <ModeToggle />
             <Button
@@ -98,7 +93,6 @@ export function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="lg:hidden border-t border-slate-200 dark:border-slate-800 py-4 animate-in fade-in slide-in-from-top-2 duration-200">
             <div className="flex flex-col gap-2">

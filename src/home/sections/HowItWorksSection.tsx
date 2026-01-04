@@ -2,7 +2,6 @@ import React from 'react';
 import { UserCircle, FileText, Target, Download } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
-// Definir tipos para TypeScript
 type ColorKey = 'blue' | 'purple' | 'green' | 'orange';
 
 interface Step {
@@ -76,7 +75,6 @@ export default function HowItWorksSection() {
     <section className="py-20 md:py-28 bg-slate-50 dark:bg-slate-900">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
               Cómo funciona CV Match
@@ -86,11 +84,10 @@ export default function HowItWorksSection() {
             </p>
           </div>
 
-          {/* Steps */}
           <div className="space-y-8">
             {steps.map((step, idx) => {
               const Icon = step.icon;
-              const colors = colorClasses[step.color]; // ✅ Ahora TypeScript sabe que es válido
+              const colors = colorClasses[step.color];
               
               return (
                 <div 
@@ -98,7 +95,6 @@ export default function HowItWorksSection() {
                   className="relative bg-white dark:bg-slate-800 rounded-2xl p-8 md:p-10 shadow-lg border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow"
                 >
                   <div className="flex flex-col md:flex-row gap-6 items-start">
-                    {/* Icon and Number */}
                     <div className="shrink-0">
                       <div className={`relative ${colors.bg} ${colors.border} border-2 rounded-2xl p-6 w-20 h-20 flex items-center justify-center`}>
                         <Icon className={`w-10 h-10 ${colors.text}`} />
@@ -108,7 +104,6 @@ export default function HowItWorksSection() {
                       </div>
                     </div>
 
-                    {/* Content */}
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">
                         {step.title}
@@ -119,7 +114,6 @@ export default function HowItWorksSection() {
                     </div>
                   </div>
 
-                  {/* Connector Line (except last item) */}
                   {idx < steps.length - 1 && (
                     <div className="hidden md:block absolute left-14 top-full w-0.5 h-8 bg-linear-to-b from-slate-300 to-transparent dark:from-slate-600"></div>
                   )}

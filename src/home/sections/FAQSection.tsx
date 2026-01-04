@@ -39,7 +39,6 @@ export default function FAQSection() {
     <section className="py-20 md:py-28 bg-white dark:bg-slate-950">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          {/* Section Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 mb-6">
               <HelpCircle className="w-4 h-4 text-blue-600 dark:text-blue-400" />
@@ -56,7 +55,6 @@ export default function FAQSection() {
             </p>
           </div>
 
-          {/* FAQ Accordion */}
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, idx) => (
               <AccordionItem 
@@ -78,7 +76,6 @@ export default function FAQSection() {
             ))}
           </Accordion>
 
-          {/* Additional Help */}
           <div className="mt-12 text-center p-8 bg-linear-to-r from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-950/30 rounded-2xl border border-slate-200 dark:border-slate-700">
             <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
               ¿Tienes más preguntas?
